@@ -1,11 +1,11 @@
 # Bài Thực Hành 1: Hệ Thống Web API Kiểm Duyệt Nội Dung (Toxic Content Detection)
 
-## 1. Thông tin sinh viên
+##1. Thông tin sinh viên
 * **Họ và tên:** Nguyễn Lê Ngọc Quý
 * **MSSV:** 24120422
 * **Môn học:** Tư duy tính toán - Trường ĐH Khoa Học Tự Nhiên (KHTN), ĐHQG-HCM
 
-## 2. Thông tin mô hình Trí tuệ nhân tạo
+## 2. Thông tin mô hình
 * **Tên mô hình:** `unitary/toxic-bert`
 * **Nền tảng:** Hugging Face
 * **Đường dẫn:** [https://huggingface.co/unitary/toxic-bert](https://huggingface.co/unitary/toxic-bert)
@@ -29,14 +29,14 @@ uvicorn main:app --reload --port 8000
 ```
 Sau khi khởi động, bạn có thể truy cập tài liệu API tự động (Swagger UI) tại: `http://127.0.0.1:8000/docs`
 
-## 5. Hướng dẫn gọi API và Ví dụ
+## 5.Ví dụ
 
 Hệ thống cung cấp 3 endpoint chính:
 * `GET /`: Xem thông tin giới thiệu hệ thống.
 * `GET /health`: Kiểm tra trạng thái hoạt động của Server.
 * `POST /predict`: Dự đoán mức độ độc hại của văn bản.
 
-**Ví dụ gọi API bằng Python (Sử dụng thư viện `requests`):**
+**Ví dụ:**
 
 ```python
 import requests
