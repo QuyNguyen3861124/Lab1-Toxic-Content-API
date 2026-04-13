@@ -1,6 +1,6 @@
 # Bài Thực Hành 1: Hệ Thống Web API Kiểm Duyệt Nội Dung (Toxic Content Detection)
 
-##1. Thông tin sinh viên
+## 1. Thông tin sinh viên
 * **Họ và tên:** Nguyễn Lê Ngọc Quý
 * **MSSV:** 24120422
 * **Môn học:** Tư duy tính toán - Trường ĐH Khoa Học Tự Nhiên (KHTN), ĐHQG-HCM
