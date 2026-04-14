@@ -71,6 +71,6 @@ response = requests.post(
 )
 
 print("Kết quả từ Internet:", response.json())
-
-## 6. Video Demo Hệ Thống
-* 👉 **Link Video Demo:** https://drive.google.com/drive/folders/1kp_PKBTid2sU3dIQkZt9mCrL3qzPs8MW?usp=sharing
+```
+# 6. Video Demo Hệ Thống
+* **Link Video Demo:** https://drive.google.com/drive/folders/1kp_PKBTid2sU3dIQkZt9mCrL3qzPs8MW?usp=sharing
