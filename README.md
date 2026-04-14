@@ -52,5 +52,25 @@ response_toxic = requests.post(url, params={"message": "You are a stupid and tox
 print("Test 2:", response_toxic.json())
 ```
 
+### Triển khai Public API
+Hệ thống hỗ trợ public ra Internet thông qua đường hầm **Localtunnel** hoặc **Pinggy** để giả lập môi trường Cloud thực tế.
+
+**Ví dụ test qua Public API bằng file `test_api.py`:**
+```python
+import requests
+
+# Link thay đổi linh hoạt tùy theo phiên chạy của Localtunnel/Pinggy
+PUBLIC_URL = "https://[LINK-PUBLIC-CỦA-BẠN]"
+API_URL = f"{PUBLIC_URL}/predict"
+
+# Gửi request với header bypass của Localtunnel
+response = requests.post(
+    API_URL, 
+    params={"message": "You are a stupid and toxic idiot!"},
+    headers={"Bypass-Tunnel-Reminder": "true"}
+)
+
+print("Kết quả từ Internet:", response.json())
+
 ## 6. Video Demo Hệ Thống
 * 👉 **Link Video Demo:** https://drive.google.com/drive/folders/1kp_PKBTid2sU3dIQkZt9mCrL3qzPs8MW?usp=sharing
