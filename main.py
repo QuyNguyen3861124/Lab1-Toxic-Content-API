@@ -26,7 +26,7 @@ class ToxicityClassification:
 
 classifier = ToxicityClassification("./config.yaml")
 
-app = FastAPI(title="Hệ thống Kiểm duyệt API")
+app = FastAPI(title="Hệ thống kiểm duyệt ngôn từ bằng tiếng Anh")
 
 app.add_middleware(
     CORSMiddleware, allow_origins=['*'], allow_credentials=True, allow_methods=['*'], allow_headers=['*'],
